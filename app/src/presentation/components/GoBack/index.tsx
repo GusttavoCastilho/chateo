@@ -6,11 +6,16 @@ import { Ionicons } from "@expo/vector-icons";
 
 import * as S from "./styles";
 
-export const GoBack = ({ ...props }: TouchableOpacityProps) => {
+type GoBackProps = {
+  title?: string
+} & TouchableOpacityProps
+
+export const GoBack = ({ title, ...props }: GoBackProps) => {
   const theme = useTheme();
   return (
     <S.Container {...props}>
       <Ionicons name="chevron-back-sharp" size={26} color={theme.active} />
+      {!!title && <S.Title>{title}</S.Title>}
     </S.Container>
   );
 };

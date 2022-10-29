@@ -4,6 +4,7 @@ export declare global {
       Walkthrough: undefined;
       Verification: undefined;
       VerificationCode: { country: number, phone: number };
+      Profile: undefined;
     }
   }
 }

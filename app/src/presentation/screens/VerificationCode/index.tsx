@@ -1,6 +1,6 @@
 import React from "react";
 import { Platform } from 'react-native'
-import { RouteProp, useRoute } from "@react-navigation/native";
+import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
 
 import { GoBack } from "../../components/GoBack";
 
@@ -16,6 +16,7 @@ type RouteProps = {
 
 export const VerificationCode = () => {
   const { params } = useRoute<RouteProp<RouteProps, "params">>();
+  const navigation = useNavigation()
   return (
     <S.Container>
       <GoBack />
@@ -33,7 +34,7 @@ export const VerificationCode = () => {
           </S.WrapperInput>
         </S.Content>
 
-        <Button title="Resend Code" type="ghost" />
+        <Button title="Resend Code" type="ghost" onPress={() => navigation.navigate('Profile')} />
       </S.Keyboard>
     </S.Container>
   );
