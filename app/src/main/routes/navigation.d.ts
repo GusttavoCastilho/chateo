@@ -3,6 +3,7 @@ export declare global {
     interface RootParamList {
       Walkthrough: undefined;
       Verification: undefined;
+      VerificationCode: { country: number, phone: number };
     }
   }
 }

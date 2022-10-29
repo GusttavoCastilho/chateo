@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import { Walkthrough } from "../../presentation/screens/Walkthrough";
 import { Verification } from "../../presentation/screens/Verification";
+import { VerificationCode } from "../../presentation/screens/VerificationCode";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,7 @@ export const Routes = () => {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Walkthrough" component={Walkthrough} />
         <Stack.Screen name="Verification" component={Verification} />
+        <Stack.Screen name="VerificationCode" component={VerificationCode} />
       </Stack.Navigator>
     </NavigationContainer>
   );

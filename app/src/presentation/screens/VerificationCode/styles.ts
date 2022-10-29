@@ -37,40 +37,16 @@ export const Description = styled.Text`
 `;
 
 export const WrapperInput = styled.View`
-  width: 100%;
-  height: 46px;
-  padding: 0px 24px;
-  flex-direction: row;
-  margin-top: ${RFValue(48)}px;
-`;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: ${RFValue(56)}px;
+`
 
-export const Country = styled.View`
-  width: 74px;
-  height: 46px;
-  background-color: #152033;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  border-radius: 4px;
-`;
-
-export const TextCountry = styled.Text`
-  font-size: ${RFValue(14)}px;
-  font-weight: 600;
-  color: ${(props) => props.theme.active};
-  padding-left: 8px;
-`;
-
-export const InputNumber = styled.TextInput`
-  flex: 1;
-  height: 46px;
-  background-color: #152033;
-  margin-left: 8px;
-  border-radius: 4px;
-  color: ${(props) => props.theme.active};
-  padding: 8px;
-`;
-
-export const WrapperButton = styled.View`
-  padding: 20px;
-`;
+export const CircleInput = styled.TextInput`
+	width: 24px;
+	height: 24px;
+	background-color: #152033;
+	border-radius: 12px;
+`
