@@ -5,6 +5,7 @@ export declare global {
       Verification: undefined;
       VerificationCode: { country: number, phone: number };
       Profile: undefined;
+      Contact: undefined;
     }
   }
 }

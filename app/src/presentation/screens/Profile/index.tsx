@@ -9,8 +9,10 @@ import ChangeAvatarSvg from "../../assets/change.svg";
 import * as S from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { useNavigation } from "@react-navigation/native";
 
 export const Profile = () => {
+  const navigation = useNavigation();
   return (
     <S.Container>
       <GoBack title="Your Profile" />
@@ -30,7 +32,7 @@ export const Profile = () => {
           </S.WrapperInput>
         </S.Content>
         <S.WrapperButton>
-          <Button title="Save" />
+          <Button title="Save" onPress={() => navigation.navigate('Contact')} />
         </S.WrapperButton>
       </S.Keyboard>
     </S.Container>
