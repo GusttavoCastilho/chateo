@@ -1,13 +1,17 @@
 import React from "react";
 import { useColorScheme } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
+import { Button } from "../../components/Button";
+
 import * as S from "./styles";
 
 import IllustrationLight from "../../assets/illustration.svg";
 import IllustrationDark from "../../assets/illustration-dark.svg";
-import { Button } from "../../components/Button";
 
 export const Walkthrough = () => {
   const scheme = useColorScheme();
+  const navigation = useNavigation()
   return (
     <S.Container>
       <S.Header>
@@ -19,7 +23,7 @@ export const Walkthrough = () => {
 
       <S.WrapperButtons>
         <Button type="ghost" title="Terms & Privacy Policy" />
-        <Button title="Start Messaging" />
+        <Button title="Start Messaging" onPress={() => navigation.navigate('Verification')} />
       </S.WrapperButtons>
     </S.Container>
   );
