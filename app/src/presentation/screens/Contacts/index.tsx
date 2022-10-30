@@ -1,13 +1,14 @@
 import React from "react";
 import { FlatList } from "react-native";
+
 import { Header } from "../../components/Header";
+import { ContactItem } from "../../components/ContactItem";
+import { Input } from "../../components/Input";
+import { contacts } from "./mock";
 
 import AddSvg from "../../assets/add.svg";
 
 import * as S from "./styles";
-import { Input } from "../../components/Input";
-import { contacts } from "./mock";
-import { ContactItem } from "../../components/ContactItem";
 
 export const Contacts = () => {
   return (
