@@ -8,19 +8,21 @@ import { VerificationCode } from "../../presentation/screens/VerificationCode";
 import { Profile } from "../../presentation/screens/Profile";
 import { Contacts } from "../../presentation/screens/Contacts";
 import { Chats } from "../../presentation/screens/Chats";
+import { More } from "../../presentation/screens/More";
 
 const Stack = createNativeStackNavigator();
 
 export const Routes = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='Chat'>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='More'>
         <Stack.Screen name="Walkthrough" component={Walkthrough} />
         <Stack.Screen name="Verification" component={Verification} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Contact" component={Contacts} />
         <Stack.Screen name="Chat" component={Chats} />
+        <Stack.Screen name="More" component={More} />
       </Stack.Navigator>
     </NavigationContainer>
   );

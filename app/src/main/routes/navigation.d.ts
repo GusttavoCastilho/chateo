@@ -7,6 +7,7 @@ export declare global {
       Profile: undefined;
       Contact: undefined;
       Chat: undefined;
+      More: undefined;
     }
   }
 }
