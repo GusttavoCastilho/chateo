@@ -9,13 +9,17 @@ import { Profile } from "../../presentation/screens/Profile";
 import { Contacts } from "../../presentation/screens/Contacts";
 import { Chats } from "../../presentation/screens/Chats";
 import { More } from "../../presentation/screens/More";
+import { PersonalChat } from "../../presentation/screens/PersonalChat";
 
 const Stack = createNativeStackNavigator();
 
 export const Routes = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='More'>
+      <Stack.Navigator
+        screenOptions={{ headerShown: false }}
+        initialRouteName="PersonalChat"
+      >
         <Stack.Screen name="Walkthrough" component={Walkthrough} />
         <Stack.Screen name="Verification" component={Verification} />
         <Stack.Screen name="VerificationCode" component={VerificationCode} />
@@ -23,6 +27,7 @@ export const Routes = () => {
         <Stack.Screen name="Contact" component={Contacts} />
         <Stack.Screen name="Chat" component={Chats} />
         <Stack.Screen name="More" component={More} />
+        <Stack.Screen name="PersonalChat" component={PersonalChat} />
       </Stack.Navigator>
     </NavigationContainer>
   );

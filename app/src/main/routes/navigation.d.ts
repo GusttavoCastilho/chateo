@@ -8,6 +8,7 @@ export declare global {
       Contact: undefined;
       Chat: undefined;
       More: undefined;
+      PersonalChat: undefined;
     }
   }
 }
