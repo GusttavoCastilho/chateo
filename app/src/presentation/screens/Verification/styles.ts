@@ -44,16 +44,6 @@ export const WrapperInput = styled.View`
   margin-top: ${RFValue(48)}px;
 `;
 
-export const Country = styled.View`
-  width: 74px;
-  height: 46px;
-  background-color: #152033;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  border-radius: 4px;
-`;
-
 export const TextCountry = styled.Text`
   font-size: ${RFValue(14)}px;
   font-weight: 600;
@@ -74,3 +64,13 @@ export const InputNumber = styled.TextInput`
 export const WrapperButton = styled.View`
   padding: 20px;
 `;
+
+export const WrapperFlag = styled.View`
+  width: 90px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  background-color: #152033;
+  border-radius: 4px;
+`

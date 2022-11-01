@@ -18,7 +18,7 @@ export const Routes = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{ headerShown: false }}
-        initialRouteName="PersonalChat"
+        initialRouteName="Walkthrough"
       >
         <Stack.Screen name="Walkthrough" component={Walkthrough} />
         <Stack.Screen name="Verification" component={Verification} />
