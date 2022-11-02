@@ -44,9 +44,17 @@ export const WrapperInput = styled.View`
 	margin-top: ${RFValue(56)}px;
 `
 
-export const CircleInput = styled.TextInput`
-	width: 24px;
-	height: 24px;
+export const Circle = styled.View`
+	width: 48px;
+	height: 48px;
 	background-color: #152033;
-	border-radius: 12px;
+	border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+`;
+
+export const TextCode = styled.Text`
+  color: ${(props) => props.theme.active};
+  font-size: 24px;
 `
